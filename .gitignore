@@ -1,0 +1,28 @@
+# WordPress
+wp-config.php
+/wp-content/uploads/
+
+# Environment
+.env
+.env.local
+
+# WordPress
+wordpress/*
+!wordpress/.gitkeep
+
+# Base de datos
+database/*
+!database/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+
+# Logs
+*.log
+
+# Docker local overrides
+docker-compose.override.yml
