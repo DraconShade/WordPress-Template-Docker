@@ -1,18 +1,12 @@
-# WordPress
-wp-config.php
-/wp-content/uploads/
-
 # Environment
 .env
 .env.local
 
 # WordPress
-wordpress/*
-!wordpress/.gitkeep
+wordpress/
 
 # Base de datos
-database/*
-!database/.gitkeep
+database/
 
 # OS files
 .DS_Store
