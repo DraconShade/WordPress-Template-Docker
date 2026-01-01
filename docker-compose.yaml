@@ -1,6 +1,9 @@
 services:
   db:
     image: mariadb:latest
+    container_name: mariadb
+    ports:
+      - "${DB_PORT}:3306"
     environment:
       MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
       MARIADB_DATABASE: ${DB_NAME}
@@ -9,6 +12,7 @@ services:
 
   wordpress:
     image: wordpress:latest
+    container_name: wordpress
     depends_on:
       - db
     ports:
@@ -24,6 +28,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin:latest
+    container_name: phpmyadmin
     depends_on:
       - db
     ports:
